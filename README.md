@@ -1,3 +1,12 @@
-# Estudos e projetos - Faculdade
+# Estudos e projetos - Faculdade 💻
 
-### Formação em ciências da computação
+String olaMundo = "hello world";
+
+
+escreva(olaMundo);
+
+printf(olaMundo);
+
+System.out.print(olaMundo);
+
+Console.writeLine(olaMundo);
