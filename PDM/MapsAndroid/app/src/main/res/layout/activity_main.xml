@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/cabecalho1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:text="Gerador de Mapa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <RadioGroup
+
+            android:id="@+id/rgEstado"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rbSP"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="São Paulo"/>
+
+            <RadioButton
+                android:id="@+id/rbMG"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Minas Gerais"/>
+
+            <RadioButton
+                android:id="@+id/rbRJ"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Rio de Janeiro"/>
+
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spnCidades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:prompt="@string/spn_texto"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btnMapa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:padding="20sp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Abrir Mapa"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

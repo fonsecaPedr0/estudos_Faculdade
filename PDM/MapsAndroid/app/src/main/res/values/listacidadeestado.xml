@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="saopaulo">
+        <item>São Jose do Rio Preto</item>
+        <item>Mirassol</item>
+        <item>Jose Bonifacio</item>
+        <item>Guaraci</item>
+        <item>Balsamo</item>
+    </string-array>
+
+    <string-array name="minas">
+        <item>Ouro preto</item>
+        <item>Mariana</item>
+        <item>Belo Horizonte</item>
+        <item>Capitolio</item>
+        <item>São Pedro</item>
+    </string-array>
+
+    <string-array name="rio">
+        <item>Niterio</item>
+        <item>Rio de Janeiro</item>
+        <item>Paraty</item>
+        <item>Cabo Frio</item>
+        <item>Angra dos Reis</item>
+        <item>Petrópolis</item>
+        <item>Buzios</item>
+    </string-array>
+
+</resources>
