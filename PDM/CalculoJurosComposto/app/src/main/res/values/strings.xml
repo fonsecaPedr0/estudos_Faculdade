@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CalculoJurosComposto</string>
+    <string name="spn_texto">Periodo</string>
+</resources>
