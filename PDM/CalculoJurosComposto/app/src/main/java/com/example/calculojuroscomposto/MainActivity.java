@@ -2,10 +2,13 @@ package com.example.calculojuroscomposto;
 
 import static java.lang.Math.pow;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.view.autofill.AutofillValue;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -25,6 +28,9 @@ public class MainActivity extends AppCompatActivity
     TextView montante;
     TextView jurosC;
 
+    String tempoJ;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -41,47 +47,59 @@ public class MainActivity extends AppCompatActivity
         montante = (TextView) findViewById(R.id.idMontante);
         jurosC = (TextView) findViewById(R.id.idJurosC);
 
-        btnCalcular.setOnClickListener((v) -> {calcularJurosC();});
-    }
-
-    public void calcularJurosC()
-    {
-        Double aplicado = Double.parseDouble(capital.getText().toString());
-
-        Double indiceJ = Double.parseDouble(iJuros.getText().toString());
-
-        Integer tempoAnoMes = Integer.parseInt(tempo.getText().toString());
-
-        Double valorJ, valorM, valorExponencial;
-
-        valorExponencial = pow((1+indiceJ), tempoAnoMes);
-
-        valorM = aplicado * valorExponencial;
-
-        valorJ = valorM - aplicado;
-
-        //montante.setText(String.valueOf(valorM));
-        //jurosC.setText("O valor do Juros e: " + valorJ.floatValue());
-        periodo.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
-        {
+        periodo.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i)
             {
                 int id = radioGroup.findViewById(i).getId();
                 switch (id)
                 {
-                    case R.id.idAno:
-                        montante.setText("Após " + tempoAnoMes + " Ano(s) você terá R$: " + valorM.floatValue());
-                        jurosC.setText("O valor do Juros e de: " + valorJ.floatValue());
+                    case R.id.idMes:
+                        tempoJ = "mes(es)";
                         break;
 
-                    case R.id.idMes:
-                        montante.setText("Após " + tempoAnoMes + " mes(es) você terá R$: " + valorM.floatValue());
-                        jurosC.setText("O valor do Juros e de: " + valorJ.floatValue());
+                    case R.id.idAno:
+                        tempoJ = "ano(s)";
                         break;
                 }
             }
         });
 
+        btnCalcular.setOnClickListener((v) -> {calcularJurosC();});
+
     }
+
+    public void calcularJurosC()
+    {
+        try {
+
+            Double aplicado = Double.parseDouble(capital.getText().toString());
+
+            Double indiceJ = Double.parseDouble(iJuros.getText().toString());
+
+            Integer tempoAnoMes = Integer.parseInt(tempo.getText().toString());
+
+            Double valorJ, valorM, valorExponencial;
+
+            indiceJ = indiceJ/100;
+
+            valorExponencial = pow((1+indiceJ), tempoAnoMes);
+
+            valorM = aplicado * valorExponencial;
+
+            valorJ = valorM - aplicado;
+
+            montante.setText("Após " + tempoAnoMes + " " + tempoJ + " você terá R$: " + valorM.floatValue());
+            jurosC.setText("O juros será de R$: " + valorJ.floatValue());
+
+        }
+        catch (Exception exception)
+        {
+           montante.setText("Informe os valores em todos os campos");
+           montante.setTextColor(Color.RED);
+        }
+
+    }
+
+
 }
