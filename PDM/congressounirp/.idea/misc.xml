@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Ferramentas/Android/workspace/AndroidStudioProjects/congressounirp/app/src/main/res/layout/activity_avaliacao_trabalho_apresentacao.xml" value="0.3625" />
+        <entry key="..\:/Ferramentas/Android/workspace/AndroidStudioProjects/congressounirp/app/src/main/res/layout/activity_avaliacao_trabalho_resumo.xml" value="0.3625" />
+        <entry key="..\:/Ferramentas/Android/workspace/AndroidStudioProjects/congressounirp/app/src/main/res/layout/activity_cadastrar_avaliador.xml" value="0.3625" />
+        <entry key="..\:/Ferramentas/Android/workspace/AndroidStudioProjects/congressounirp/app/src/main/res/layout/activity_cadastrar_trabalho.xml" value="0.3625" />
+        <entry key="..\:/Ferramentas/Android/workspace/AndroidStudioProjects/congressounirp/app/src/main/res/layout/activity_lista_trabalho_apresentacao.xml" value="0.3625" />
+        <entry key="..\:/Ferramentas/Android/workspace/AndroidStudioProjects/congressounirp/app/src/main/res/layout/activity_lista_trabalho_resumo.xml" value="0.3484375" />
+        <entry key="..\:/Ferramentas/Android/workspace/AndroidStudioProjects/congressounirp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Ferramentas/Android/workspace/AndroidStudioProjects/congressounirp/app/src/main/res/layout/activity_splash_screen.xml" value="0.223731884057971" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

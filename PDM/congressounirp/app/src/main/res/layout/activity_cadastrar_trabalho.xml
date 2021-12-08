@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.CadastrarTrabalho">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/DarkGray">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastro de Trabalho"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:background="@color/SpringGreen"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:padding="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <RadioGroup
+            android:id="@+id/rgArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+            android:id="@+id/rbBA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Biológicas e Agrárias "
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/rbE"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Exatas"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/rbH"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Humanas"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <RadioButton
+                android:id="@+id/rbS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Saúde"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título"
+            android:textSize="20sp"
+            android:padding="23dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/edtAutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Autor"
+            android:textSize="20sp"
+            android:padding="23dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edtInstituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Instituição"
+            android:textSize="20sp"
+            android:padding="23dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edtOrientador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Orientador"
+            android:textSize="20sp"
+            android:padding="23dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edtCodAvalResumo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Código avaliador resumo"
+            android:textSize="20sp"
+            android:padding="23dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/edtCodAvalApres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Código avaliador pôster"
+            android:textSize="20sp"
+            android:padding="23dp"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/spnCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="23dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"/>
+
+        <Button
+            android:id="@+id/btnCadTrab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="#FFFFFF"
+            android:layout_gravity="center"
+            android:text="Cadastrar"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"/>
+    </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

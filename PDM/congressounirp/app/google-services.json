@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "108738903582",
+    "project_id": "congressounirp-faa8d",
+    "storage_bucket": "congressounirp-faa8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108738903582:android:cc6f9214da26890978b80f",
+        "android_client_info": {
+          "package_name": "com.example.congressounirp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108738903582-oui9d4t68na2p1lsk6gt9borq71rep8s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.congressounirp",
+            "certificate_hash": "daf3201670407177d113d09e30bbb67b8c2b97ea"
+          }
+        },
+        {
+          "client_id": "108738903582-87kobc8311u5ffkr02ka81nqnsipe76k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqcojXrhFGbUHmWICT-4k1mE2na9uNM5c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108738903582-87kobc8311u5ffkr02ka81nqnsipe76k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
